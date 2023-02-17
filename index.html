@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="index.js"></script>
+  <title>Whatsapp 2</title>
+</head>
+<body>
+
+  <div id="block-modal" class="modal block">
+    <div id="block-modal-content" class="modal-content block">
+      <p>Do you want to block this user?</p>
+      <div class="modal-content-buttons">
+        <button id="yes-modal-button">Yes</button>
+        <button id="no-modal-button">No</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <section class="chats">
+
+      <header class="chats-header">
+        <p class="title">Whatsapp 2</p>
+        <div class="chats-header-buttons">
+          <svg class="icon" viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" id="ee51d023-7db6-4950-baf7-c34874b80976" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve"><path fill="currentColor" d="M12,20.664c-2.447,0.006-4.795-0.966-6.521-2.702c-0.381-0.381-0.381-1,0-1.381c0.381-0.381,1-0.381,1.381,0 l0,0c2.742,2.742,7.153,2.849,10.024,0.244c0.4-0.361,1.018-0.33,1.379,0.07c0.36,0.398,0.33,1.013-0.066,1.375 C16.502,19.813,14.292,20.666,12,20.664z M19.965,14.552c-0.539,0-0.977-0.437-0.977-0.976c0-0.085,0.011-0.17,0.033-0.253 c1.009-3.746-1.105-7.623-4.8-8.804c-0.51-0.175-0.782-0.731-0.607-1.241c0.17-0.495,0.7-0.768,1.201-0.619 c4.688,1.498,7.371,6.416,6.092,11.169C20.793,14.255,20.407,14.551,19.965,14.552z M3.94,14.162 c-0.459-0.001-0.856-0.321-0.953-0.769C1.939,8.584,4.858,3.801,9.613,2.533c0.52-0.144,1.058,0.161,1.201,0.681 c0.144,0.52-0.161,1.058-0.681,1.201c-0.005,0.001-0.01,0.003-0.015,0.004C6.37,5.418,4.07,9.187,4.895,12.977 c0.114,0.527-0.221,1.048-0.748,1.162C4.079,14.154,4.01,14.162,3.94,14.162z"></path></svg>
+          <span class="icon material-icons">
+            chat
+          </span>
+          <span class="icon material-icons">
+            more_vert
+          </span>
+        </div>
+      </header>
+
+      <div class="chats-input-container">
+        <span class="icon material-icons">
+          search
+        </span>
+        <input id="search-input" type="text" placeholder="Search someone">
+
+      </div>
+
+      <div class="chat">
+        <img class="chat-image" src="https://images.pexels.com/photos/2050994/pexels-photo-2050994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile">
+        <div class="chat-details">
+          <div class="chat-details-top">
+            <p class="chat-name">La prisas</p>
+            <p class="chat-preview">21:20</p>
+          </div>
+          <p class="chat-preview">Señora que no se cuele, voy yo</p>
+        </div>
+      </div>
+      <div class="chat">
+        <img class="chat-image" src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2021/09/Fecha-de-lanzamiento-personajes-y-trama-de-Shrek-5-lo.jpg" alt="profile">
+        <div class="chat-details">
+          <div class="chat-details-top">
+            <p class="chat-name">Shrek</p>
+            <p class="chat-preview">12:34</p>
+          </div>
+          <p class="chat-preview">Una cebolla tiene muchas capas</p>
+        </div>
+      </div>
+      <div class="chat">
+        <img class="chat-image" src="https://en.meming.world/images/en/thumb/e/e9/Giga_Chad_%28alt%29.jpg/300px-Giga_Chad_%28alt%29.jpg" alt="profile">
+        <div class="chat-details">
+          <div class="chat-details-top">
+            <p class="chat-name">Fran</p>
+            <p class="chat-preview">ayer</p>
+          </div>
+          <p class="chat-preview">No te voy a poner un 10 pesao</p>
+        </div>
+      </div>
+      <div class="chat">
+        <img class="chat-image" src="https://images.pexels.com/photos/12663050/pexels-photo-12663050.jpeg?auto=compress&cs=tinysrgb&w=400" alt="profile">
+        <div class="chat-details">
+          <div class="chat-details-top">
+            <p class="chat-name">La prisas</p>
+            <p class="chat-preview">15/1/2023</p>
+          </div>
+          <p class="chat-preview">Dale wey</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="main-chat">
+
+      <header class="main-chat-header">
+        <div class="main-chat-details">
+          <img id="main-chat-image" class="main-chat-image" src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2021/09/Fecha-de-lanzamiento-personajes-y-trama-de-Shrek-5-lo.jpg" alt="profile">
+          <p id="main-chat-name">Shrek</p>
+        </div>
+        <div class="main-chat-header-buttons">
+          <span class="icon material-icons">
+            search
+          </span>
+          <span class="icon material-icons">
+            more_vert
+          </span>
+        </div>
+      </header>
+
+      <div class="chat-messages">
+
+        <div class="message-row">
+          <div class="message-content">
+            <p>Somebody once told me the world is gonna roll me</p>
+          </div>
+        </div>
+
+        <div class="message-row owner">
+          <div class="message-content owner">
+            <p>I ain't the sharpest tool in the shed</p>
+          </div>
+        </div>
+
+        <div class="message-row owner">
+          <div class="message-content owner">
+            <p>She was looking kind of dumb with her finger and her thumb</p>
+          </div>
+        </div>
+
+        <div class="message-row owner">
+          <div class="message-content owner">
+            <p>In the shape of an "L" on her forehead</p>
+          </div>
+        </div>
+
+        <div class="message-row owner">
+          <div class="message-content owner">
+            <p>Well the years start coming and they don't stop coming
+              Fed to the rules and I hit the ground running
+              Didn't make sense not to live for fun</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="input-container">
+        <span class="icon material-icons">
+          tag_faces
+        </span>
+        <span class="icon material-icons">
+          attachment
+        </span>
+        <input id="chat-input" class="chat-input" type="text" placeholder="Type a message">
+        <span class="icon material-icons">
+          mic
+        </span>
+      </div>
+
+    </section>
+
+
+    <section id="info-section" class="info">
+
+      <header>
+        <span id="info-section-close" class="icon material-icons">
+          close
+        </span>
+        <p class="info-title">Contact info</p>
+      </header>
+
+      <div class="info-container info-details">
+        <img class="info-details-image" src="https://i0.wp.com/www.lacasadeel.net/wp-content/uploads/2021/09/Fecha-de-lanzamiento-personajes-y-trama-de-Shrek-5-lo.jpg" alt="profile">
+
+        <p class="info-container-name">Shrek</p>
+        <p class="info-container-title">+61 125 478 369</p>
+      </div>
+
+      <div class="info-container info-about">
+        <p class="info-container-title">About</p>
+        <p>Hey there! I am using Whatsapp 2</p>
+      </div>
+
+      <div class="info-container info-media">
+        <p class="info-container-title">Media, Links and Docs</p>
+        <div class="files-container info-media">
+          <img class="info-media-file" src="https://cdnb.artstation.com/p/assets/images/images/006/924/853/large/cristian-dumitriu-obaby-color-01.jpg?1502295831" alt="media file">
+          <img class="info-media-file" src="https://cdnb.artstation.com/p/assets/images/images/006/924/853/large/cristian-dumitriu-obaby-color-01.jpg?1502295831" alt="media file">
+          <img class="info-media-file" src="https://cdnb.artstation.com/p/assets/images/images/006/924/853/large/cristian-dumitriu-obaby-color-01.jpg?1502295831" alt="media file">
+        </div>
+      </div>
+
+      <div class="info-container info-options">
+
+        <div class="info-option">
+          <span class="icon material-icons">
+            star
+            </span>
+          <p class="info-option-text">Starred messages</p>
+          <span class="icon material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div class="info-option">
+          <span class="icon material-icons">
+            notifications
+          </span>
+          <p class="info-option-text">Mute notifications</p>
+          <span class="icon material-icons">
+            toggle_off
+          </span>
+        </div>
+
+        <div class="info-option">
+          <span class="icon material-icons">
+            av_timer
+          </span>
+          <p class="info-option-text">Temporal messages</p>
+          <span class="icon material-icons">
+            navigate_next
+          </span>
+        </div>
+
+        <div id="info-option-block" class="info-option block">
+          <span class="icon material-icons">
+            block
+          </span>
+          <p class="info-option-text">Block Shrek</p>
+          <span>
+
+          </span>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </main>
+</body>
+</html>

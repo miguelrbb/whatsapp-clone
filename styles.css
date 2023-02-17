@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --header-background-color: rgb(240, 242, 245);
+  --icon-color: rgb(84 101 111);
+  --outgoing-background: rgb(217, 253, 211);
+  --border-props: 1px solid rgb(232, 232, 232);
+  --container-hover: rgb(239, 239, 239);
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  background: rgb(53,175,141);
+  background: linear-gradient(180deg, rgba(53,175,141,1) 15%, rgb(232, 232, 232) 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6, span{
+  margin: 0;
+  cursor: default;
+}
+
+
+.main {
+  background: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 95%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--header-background-color);
+  height: 35px;
+  padding: 10px;
+  gap: 20px;
+}
+
+input {
+  font-family: 'Rubik', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: var(--icon-color);
+}
+
+.chats {
+  background-color: white;
+  width: 25%;
+  min-width: 305px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chats-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chats-header-buttons {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chats-input-container {
+  background-color: rgb(237, 237, 237);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
+  margin: 8px 15px;
+  gap: 20px;
+}
+
+.chats-input-container .icon{
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#search-input {
+  background-color: transparent;
+  border: none;
+}
+
+.chat {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.chat:hover {
+  background-color: var(--container-hover);
+}
+
+.chat-image {
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-details {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 67.5%;
+  border-bottom: var(--border-props);
+}
+
+.chat-details-top {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-preview {
+  font-size: 12px;
+  color: rgb(125, 125, 125);
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png);
+  background-repeat: repeat;
+}
+
+.main-chat-header {
+  border-left: var(--border-props);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-chat-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.main-chat-header-buttons {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.main-chat-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-messages {
+  background-size: cover;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.message-row.owner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.message-content {
+  font-size: 15px;
+  background-color: white;
+  max-width: 70%;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 7px;
+  border-top-left-radius: 0px;
+  box-shadow: 0px 4px 2px -2px rgb(177, 177, 177);
+}
+
+.message-content.owner {
+  background-color: var(--outgoing-background);
+  border-radius: 7px;
+  border-top-right-radius: 0px;
+}
+
+.input-container {
+  background-color: var(--header-background-color);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.chat-input {
+  font-size: 12px;
+  border: none;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  background-color: rgb(224, 224, 224);
+  transition: all 2s linear 0s;
+}
+
+.info.hidden {
+  position: absolute;
+  right: -700px;
+}
+
+.info-container {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-container.info-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-details-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-container-title {
+  color: rgb(125, 125, 125);
+  font-size: 13px;
+}
+
+.files-container.info-media {
+  display: flex;
+  gap: 20px;
+}
+
+.info-media-file {
+  flex-grow: 1;
+  border-radius: 10px;
+  width: 25%;
+  height: auto;
+}
+
+.info-container.info-options{
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.info-option {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.info-option-text {
+  flex-grow: 1;
+}
+
+.info-option.block,.info-option.block .icon {
+  color: red;
+}
+
+.info-option:hover {
+  background-color: var(--container-hover);
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.246);
+}
+
+.modal-content-buttons {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.modal-content-buttons button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+.modal-content-buttons button:hover {
+  background-color: rgb(195, 195, 195);
+}
